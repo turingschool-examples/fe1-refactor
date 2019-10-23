@@ -40,6 +40,6 @@ function submitActivity(event) {
     `;
   }
   form.reset();
-  highKickBtn.style.background = "white";
-  pushUpBtn.style.background = "white";
+  highKickBtn.classList.remove('active-high-kick-btn');
+  pushUpBtn.classList.remove('active-push-up-btn');
 }
