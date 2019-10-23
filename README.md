@@ -5,9 +5,8 @@ We all love Kim. And we all love the enthusiasm he brings to poms. So while gett
 ## Setup
 
 - Clone this repository down
-- Open up the codebase in your text editor. Explore the HTML structure and JavaScript.
-- Open up the application in the browser. Explore the funcionality that exists. 
-- Go back to the code, and line up the JavaScript that creates the functionality you see in the browser.
+- `cd` into the repo, then run `git pull origin refactor-1`.
+- Open up in your code editor and make sure you see the refactors that your instructor completed.
 
 ## Tasks
 
