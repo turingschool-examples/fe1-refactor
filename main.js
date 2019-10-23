@@ -10,22 +10,14 @@ highKickBtn.addEventListener('click', selectHighKick);
 
 function selectPushUp(event) {
   activityType = "push-up";
-  highKickBtn.style.color = "black";
-  highKickBtn.style.borderColor = "#C1C0C0";
-  highKickBtn.style.backgroundColor = "white";
-  event.target.style.backgroundColor = "#DBFFE3";
-  event.target.style.color = "#00560C";
-  event.target.style.borderColor = "#DBFFE3";
+  highKickBtn.classList.remove('active-high-kick-btn');
+  event.target.classList.toggle('active-push-up-btn');
 }
 
 function selectHighKick() {
   activityType = "high-kick";
-  pushUpBtn.style.color = "black";
-  pushUpBtn.style.borderColor = "#C1C0C0";
-  pushUpBtn.style.backgroundColor = "white";
-  event.target.style.backgroundColor = "#EBEBFF";
-  event.target.style.color = "#2B006B";
-  event.target.style.borderColor = "#EBEBFF";
+  pushUpBtn.classList.remove('active-push-up-btn');
+  event.target.classList.toggle('active-high-kick-btn');
 }
 
 function submitActivity(event) {
@@ -48,6 +40,6 @@ function submitActivity(event) {
     `;
   }
   form.reset();
-  highKickBtn.style.background = "white";
-  pushUpBtn.style.background = "white";
+  highKickBtn.classList.remove('active-high-kick-btn');
+  pushUpBtn.classList.remove('active-push-up-btn');
 }
