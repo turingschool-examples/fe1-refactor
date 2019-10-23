@@ -1,23 +1,22 @@
 var form = document.querySelector('.activity-form');
 var activityCards = document.querySelector('.activity-cards');
+var activitySelection = document.querySelector('.activity-selection');
 var pushUpBtn = document.getElementById('push-up');
 var highKickBtn = document.getElementById('high-kick');
 var activityType = "";
 
+activitySelection.addEventListener('click', selectActivity);
 form.addEventListener('submit', submitActivity);
-pushUpBtn.addEventListener('click', selectPushUp);
-highKickBtn.addEventListener('click', selectHighKick);
 
-function selectPushUp(event) {
-  activityType = "push-up";
-  highKickBtn.classList.remove('active-high-kick-btn');
-  event.target.classList.toggle('active-push-up-btn');
+function selectActivity(event) {
+  activityType = event.target.id;
+  clearActivityButtons();
+  event.target.classList.toggle(`active-${activityType}-btn`);
 }
 
-function selectHighKick() {
-  activityType = "high-kick";
+function clearActivityButtons() {
+  highKickBtn.classList.remove('active-high-kick-btn');
   pushUpBtn.classList.remove('active-push-up-btn');
-  event.target.classList.toggle('active-high-kick-btn');
 }
 
 function submitActivity(event) {
@@ -40,6 +39,5 @@ function submitActivity(event) {
     `;
   }
   form.reset();
-  highKickBtn.style.background = "white";
-  pushUpBtn.style.background = "white";
+  clearActivityButtons();
 }
