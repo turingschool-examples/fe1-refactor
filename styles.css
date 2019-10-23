@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  padding: 5% 20%;
+  background: #2193b0; /* fallback for old browsers */
+  background: linear-gradient(to right, #2193b0, #6dd5ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* ---- FORM ---- */
+.form-section {
+  background-color: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  padding: 2.5%;
+  border-radius: 5px;
+}
+
+.form-section p {
+  font-size: 120%;
+  margin-bottom: 1.5%;
+}
+
+.activity-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+label {
+  width: 30%;
+}
+
+.activity-type-btn {
+  padding: 1% 2%;
+  border: 1px solid #C1C0C0;
+  border-radius: 18px;
+}
+
+input {
+  font-size: 110%;
+  cursor: pointer;
+}
+
+#submit-btn {
+  border-radius: 18px;
+  background-color: #2193B0;
+  padding: 0.25% 1%;
+  border: 1px solid #2193B0;
+  color: #fff;
+}
+
+.active-push-up-btn {
+  color: #00560C;
+  border-color: #DBFFE3;
+  background-color: #DBFFE3;
+}
+
+.active-high-kick-btn {
+  color: #2B006B;
+  border-color: #EBEBFF;
+  background-color: #EBEBFF;
+}
+
+/* ---- ACTIVITY CARDS ---- */
+.activity-cards {
+  margin-top: 4%;
+}
+
+.card {
+  background-color: #fff;
+  margin: 1% 0;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.push-up-card time {
+  color: #00560C;
+  background-color: #dbffe3;
+  padding: 1% 2%;
+  border-radius: 18px;
+}
+
+.high-kick-card time {
+  color: #2B006B;
+  background-color: #ebebff;
+  padding: 1% 2%;
+  border-radius: 18px;
+}

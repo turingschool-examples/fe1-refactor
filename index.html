@@ -2,27 +2,34 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>Refactor Tractor</title>
   </head>
   <body>
-    <h1>Pom Activity Tracker</h1>
-    <section class="form-section">
-      <form class="activity-form">
-        <label for="date">Date</label>
-        <input type="date" id="date" required>
-        <label for="">Activity</label>
-        <input class="activity-type-btn" id="push-up" type="button" value="Push Ups">
-        <input class="activity-type-btn" id="high-kick" type="button" value="High Kicks">
-        <input id="submit-btn" type="submit" value="Log Activity">
-      </form>
-    </section>
-    <section class="activity-cards">
-      <!-- <section class="card">
-        <h2>Push Ups</h2>
-        <time>Date</time>
-      </section> -->
-    </section>
+    <main>
+      <h1>Kim's Pom Activity Tracker</h1>
+      <section class="form-section">
+        <p>Complete the form below to log any activity that Kim does during a pom. Whoever has the most accurate record at the end of Mod 1 wins a prize.</p>
+        <form class="activity-form">
+          <label for="date">Date:
+            <input type="date" id="date" required>
+          </label>
+          <label for="">Activity:
+            <input class="activity-type-btn" id="push-up" type="button" value="Push Ups">
+            <input class="activity-type-btn" id="high-kick" type="button" value="High Kicks">
+          </label>
+          <input id="submit-btn" type="submit" value="Log Activity">
+        </form>
+      </section>
+      <section class="activity-cards">
+        <!-- <section class="card">
+          <h2>Push Ups</h2>
+          <time>Date</time>
+        </section> -->
+      </section>
+    </main>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
