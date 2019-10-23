@@ -1,31 +1,22 @@
 var form = document.querySelector('.activity-form');
 var activityCards = document.querySelector('.activity-cards');
+var activityBtns = document.querySelector('.activity-btns');
 var pushUpBtn = document.getElementById('push-up');
 var highKickBtn = document.getElementById('high-kick');
 var activityType = "";
 
 form.addEventListener('submit', submitActivity);
-pushUpBtn.addEventListener('click', selectPushUp);
-highKickBtn.addEventListener('click', selectHighKick);
+activityBtns.addEventListener('click', selectActivity);
 
-function selectPushUp(event) {
-  activityType = "push-up";
-  highKickBtn.style.color = "black";
-  highKickBtn.style.borderColor = "#C1C0C0";
-  highKickBtn.style.backgroundColor = "white";
-  event.target.style.backgroundColor = "#DBFFE3";
-  event.target.style.color = "#00560C";
-  event.target.style.borderColor = "#DBFFE3";
+function selectActivity(event) {
+  activityType = event.target.id;
+  clearActivityButtons();
+  event.target.classList.toggle(`active-${activityType}-btn`);
 }
 
-function selectHighKick() {
-  activityType = "high-kick";
-  pushUpBtn.style.color = "black";
-  pushUpBtn.style.borderColor = "#C1C0C0";
-  pushUpBtn.style.backgroundColor = "white";
-  event.target.style.backgroundColor = "#EBEBFF";
-  event.target.style.color = "#2B006B";
-  event.target.style.borderColor = "#EBEBFF";
+function clearActivityButtons() {
+  highKickBtn.classList.remove('active-high-kick-btn');
+  pushUpBtn.classList.remove('active-push-up-btn');
 }
 
 function submitActivity(event) {
@@ -48,11 +39,5 @@ function submitActivity(event) {
     `;
   }
   form.reset();
-  highKickBtn.style.background = "white";
-  highKickBtn.style.borderColor = "#C1C0C0";
-  highKickBtn.style.backgroundColor = "white";
-  
-  pushUpBtn.style.background = "white";
-  pushUpBtn.style.color = "black";
-  pushUpBtn.style.borderColor = "#C1C0C0";
+  clearActivityButtons();
 }
