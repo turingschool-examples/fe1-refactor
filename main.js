@@ -49,5 +49,10 @@ function submitActivity(event) {
   }
   form.reset();
   highKickBtn.style.background = "white";
+  highKickBtn.style.borderColor = "#C1C0C0";
+  highKickBtn.style.backgroundColor = "white";
+  
   pushUpBtn.style.background = "white";
+  pushUpBtn.style.color = "black";
+  pushUpBtn.style.borderColor = "#C1C0C0";
 }
