@@ -56,6 +56,18 @@ label {
   border-radius: 18px;
 }
 
+.active-push-up-btn {
+  background-color: #DBFFE3;
+  border-color: #DBFFE3;
+  color: #00560C;
+}
+
+.active-high-kick-btn {
+  background-color: #EBEBFF;
+  border-color: #EBEBFF;
+  color: #2B006B;
+}
+
 input {
   cursor: pointer;
   font-size: 110%;
@@ -69,17 +81,6 @@ input {
   color: #fff;
 }
 
-.active-push-up-btn {
-  background-color: #DBFFE3;
-  border-color: #DBFFE3;
-  color: #00560C;
-}
-
-.active-high-kick-btn {
-  background-color: #EBEBFF;
-  border-color: #EBEBFF;
-  color: #2B006B;
-}
 
 /* ---- ACTIVITY CARDS ---- */
 .activity-cards {
